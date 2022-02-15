@@ -1,0 +1,76 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color: #777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.6);
+    background-image: url("Images/background.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+
+.page-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5rem;
+}
+
+.page-name {
+    color: #FFF;
+    padding-left: 1rem;
+    font-weight: lighter;
+}
+
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0px 2rem 0px 0px;
+    justify-content: flex-end;
+}
+
+.nav li {
+    display: inline;
+    font-size: 1.3rem;
+}
+
+.nav a {
+    padding: 0.5rem;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: box-shadow 350ms;
+    transition: background-color 350ms;
+}
+
+.nav a:hover {
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: 5px 4px 4px rgba(0,0,0,0.3);
+}
+
+#current-page {
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: 5px 4px 4px rgba(0,0,0,0.3);
+}
+
+.content-header-image {
+    width: 100%;
+    height: auto;
+}
