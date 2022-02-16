@@ -3,33 +3,539 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, inital-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <title>Enhanced Zeus Modules - Home</title>
+        <title>Enhanced Zeus Modules - Modules</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="images/EZM Icon.png">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </head>
 
     <body>
-        <div class="page-container">
-            <header class="header">
-                <div class="page-info">
-                    <img class="page-image" src="images/EZM Icon.png" width="100" height="100">
-                    <h1 class="page-name">Enhanced Zeus Modules</h1>
+        <header class="header">
+            <div class="page-info">
+                <img class="page-image" src="images/EZM Icon.png" width="100" height="100">
+                <h1 class="page-name">Enhanced Zeus Modules</h1>
+            </div>
+            <div class="nav-links">
+                <nav class="nav main-nav">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a id="current-page" href="modules.html">MODULES</a></li>
+                        <li><a href="factions.html">FACTIONS</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="https://discord.gg/W4ew5HP">DISCORD</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="content-section container">
+            <div id="ezm-modules-content">
+                <h2 id="ezm-modules-label">Modules List and Description</h2>
+                <div id="ezm-modules-accordion">
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            AI Modifiers
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>AI Modifiers change the AI settings or allow you to otherwise modify AI.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Easy Mode</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - Easy Mode is a toggle. It sets the AI skill to the lowest possible and forces them to stand.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Garrison Modules</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - Garrisoning the AI will make them enter the nearest buildings and get in positions to defend them. Instant teleports them immediately, search makes the AI walk to their positions.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Enable/Disable Lasers</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - These modules force all currently alive AI to turn on or off their lights or lasers on their gun.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Make Hostage</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module when placed on a unit will make them into a hostage. Restraining them and adding an action to them that allows players to release them. When the hostage is killed a global message appears showing who killed the hostage.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Make HVT</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module when placed on a unit will make them into a HVT. When the HVT is killed all players will be alerted of who killed them. This is useful for elimination missions as it does not show their current location.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Set Ambient Animation</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module when placed on a unit will make them play the selected animation until they are stopped with the module or killed.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Set Difficulty</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module changes the AI skill of all currently alive AI units. Easy is 0 skill, Medium is 0.5 skill, Hard is 1.0 skill.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Set Stance</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module changes the forced stance of all currently alive AI units.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Toggle Unit Carelessness</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module when placed on a unit will make them careless. This means they will not engage hostiles and will not react to gunfire.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Toggle Unit Surrender</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module when placed on a unit will make them surrender, throwing their gun to the ground.</span>
+                                <br /><br/>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            AI Supports
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>AI Supports create AI units that are meant to either support the playerbase or act as enemies.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Airdrops</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - Airdrops call an aircraft to do an airdrop on the module's position.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Evac Helicopter</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - Evac Helicopters fly to the modules position, then to a secondary position you select to pickup units, either AI or players. Setting the "Number of Passengers" parameter changes the amount of passengers needed before the helicopter leaves.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Call Reinforcements</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - When placed a helicopter will fly to the modules position and land to drop off troops, then the troops will move to the second position you selected. You can modify the type of reinforcements and the number in the menu created. Unit camos are map dependent.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            Arsenal Creator
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>The Arsenal Creator lets the Zeus create an arsenal for the ground units.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Create Full Arsenal</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module changes the object its placed onto, or if given no object, creates an arsenal that allows players to save their loadouts for respawning.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            Automated Missions
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>The Automated Missions system creates automated missions to buy the Zeus more time. Currently only configured for Altis.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Helicrash Missions</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This mission spawns a downed Ghosthawk, surrounded by CSAT in a randomized location. After 15 minutes of the mission being spawned, it will be considered failed if the CSAT is not eliminated. Upon failure or completion another will spawn in 10 minutes unless the system is turned off.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Convoy Missions</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This mission spawns an enemy CSAT or AAF convoy. To complete the mission, eliminate the convoy troops and secure the truck. Allowing the convoy to reach its destination or destroying the truck is a mission failure. Upon failure or completion another will spawn in 10 minutes unless the system is turned off.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            Clean-Up Tools
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>The Clean-Up Tools allow Zeuses to frequently clear the map of garbage and other things that reduce server and client performance.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Delete Clutter</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module deletes all dead objects on the map, jet canopys that've been broken off, and items on the floor.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Delete Empty Groups</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module deletes all empty groups. Sometimes groups are created that don't automatically delete when empty, this can cause Zeuses to have problems spawning specific sides.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Delete Everything</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module deletes all objects on the map.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Delete Markers</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module deletes all markers on the map.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Delete Mines</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module deletes all mines on the map.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Delete Radius</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module deletes all objects within the specified radius from the module placement position.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Remove Protection Zones</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module deletes all protection zones on the map.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            Delete Ships
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>Delete Ships deletes all the aircraft carriers and destroyers on the map.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Delete All Carriers</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module deletes all Aircraft Carriers.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Delete All Destroyers</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module deletes all Destroyers.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            Developer Tools
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>Developer Tools give advanced tools for those who know how to use them.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Animation Viewer</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module opens the Animation Viewer.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Local Debug Console</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module opens a debug console that is passed the entity its placed on and the module position.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Find in Config Viewer</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module opens the Config Viewer to the Config of the object its placed on.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Function Viewer</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module opens the Function Viewer.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">GUI Editor</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module opens the GUI Editor.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            Environment
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>Enviroment modules give Zeuses control over the environment they're building.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Change Time</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module changes the current time.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Edit Weather Conditions</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module opens a menu that lets you change the weather conditions very specifically.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            Explosives
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>Explosives create traps or obstacles for the playerbase to move around.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Create Minefield</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module creates a minefield with a number of mines in a radius.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Create IED</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module creates an IED that detonates when a specific side goes near it. It has many different disguises to keep the players on their toes.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            Messages
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>Messages create on screen dialog messages that the players can see.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Send Server Message</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module creates large text with the sender name and the message to all players of the specified side.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Send Subtitle Message</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module creates default Arma 3 Subtitle text for all players of the specified side.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            Object Modifiers
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>Object Modifiers let Zeus edit properties of the object.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Attach to Nearest & Detach</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - These modules attach the object to the closest object to it or detach all objects from the object.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Edit Object Attributes</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module creates a menu that lets you change the lock state of an object, the textures, simulation, god mode, and gives you an init field to run code in.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Toggle Simulation</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module toggles on or off the PhysX simulation for the object.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Toggle Invincibility</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module toggles on or off whether damage is enabled for the object.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Hide Object Modules</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - These modules toggles hide or un-hide the object.</span>
+                                <br /><br/>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            Player Modifiers
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>Player Modifiers let Zeus edit properties of the player.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Change Side</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module changes the unit to a specified side.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Disarm</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module removes the weapons from a player.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Heal & Revive</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module heals the player and revives them if it can.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Force Eject</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module ejects all occupants from the vehicle they're in.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Mute & Un-Mute</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - These modules toggles whether players other than Zeus can speak or not.</span>
+                                <br /><br/>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            Server Settings
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>Server Settings lets Zeus change server side settings.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Change Side Relations</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module changes the relations of BLUFOR, OPFOR, INDEPENDENT, and CIVILIANS.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Disable Mortars</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module disallows players from entering Mortars.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Set Respawn Timers</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module changes the time between respawns.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Remove Team-Killers</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module removes the team-killer status from all players. The team-killer status is applied automatically and disallows players from entering vehicles with the team-killer and makes friendly AI target them.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            Special Effects
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>Special Effects lets the Zeus create special visual effects.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Fire</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module creates a fire pillar on the position.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Smoke</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module creates a smoke pillar on the position.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Earthquake</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module causes an earthquake to happen.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Toggle Lamps</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module turns on or off the lamps within the radius.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">EMP</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module turns off all lamps within the radius and causes car alarms to go off.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            Terrain Object Modifiers
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>Terrain Object Modifiers let Zeus modify the terrain objects that are otherwise uneditable.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Edit Building Doors</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module allows for doors to be locked or unlocked on a building.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Hide Terrain Objects</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module hides all terrain objects within a radius.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            Teleportation
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>Teleportation allows the Zeus to teleport players to a position.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Teleport Self</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module teleports the Zeus to the position.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Teleport All Players</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module teleports ALL players to the position.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Teleport One Player</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module teleports the selected player to the position.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Teleport Side</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module teleports all players of a specific side to the position.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            Utilities
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>Utilities is mostly used to add objects to the Zeus interface.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Add Objects to Interface</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module adds ALL objects to the Zeus interface.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Add Objects to Interface (Radius)</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module adds ALL objects within the radius to the Zeus interface.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Toggle Auto-Add to Interface</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module toggles off the Auto-Add to Interface tool. When turned on everytime the Zeus interface is opened it will add all objects to the interface.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ezm-accordion-item">
+                        <button class="ezm-accordion-link">
+                            Vehicle Modifiers
+                            <ion-icon class="ezm-accordion-show" name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div class="ezm-accordion-answer">
+                            <p>
+                                <b>Vehicle Modifiers allow Zeus to change attributes about the vehicle.</b>
+                                <br /><br />
+                                <span class="ezm-accordion-subtitle">Edit Vehicle Attributes</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module allows Zeus to change the appearance of the vehicle.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Unflip Vehicle</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module unflips the vehicle.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Rearm</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module rearms the vehicle.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Refuel</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module refuels the vehicle.</span>
+                                <br /><br/>
+                                <span class="ezm-accordion-subtitle">Repair</span>:
+                                <br />
+                                <span class="ezm-accordion-subtext"> - This module repairs the vehicle.</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="nav-links">
-                    <nav class="nav main-nav">
-                        <ul>
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a id="current-page" href="modules.html">MODULES</a></li>
-                            <li><a href="factions.html">FACTIONS</a></li>
-                            <li><a href="about.html">ABOUT</a></li>
-                            <li><a href="https://discord.gg/W4ew5HP">DISCORD</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <section class="content-section container">
-
-            </section>
-        </div>
+            </div>
+        </section>
+        <footer class="footer main-footer">
+            <div class="footer-join-discord footer-item">
+                <h2 class="footer-discord-label footer-label">Join our Discord</h2>
+                <p class="footer-discord-text footer-text">
+                    The Discord keeps you up to date with EZM updates, talk with others about modules, and join community missions. 
+                </p>
+                <input class="footer-button" 
+                    type="button" 
+                    onclick="window.open('https://discord.gg/W4ew5HP','_blank','resizable=yes')" 
+                    value="Join!"
+                />
+            </div>
+            <div class="footer-feedback-tracker footer-item">
+                <h2 class="footer-feedback-tracker-label footer-label">Feedback Tracker</h2>
+                <p class="footer-feedback-tracker-text footer-text">
+                    Easily suggest a new module, faction, or report a bug, all in one place. Complete this form to submit one.
+                </p>
+                <input class="footer-button" 
+                    type="button" 
+                    onclick="window.open('https://forms.gle/ZUcQvD5vyrsF9r1g6','_blank','resizable=yes')" 
+                    value="Submit a Ticket"
+                />
+            </div>
+        </footer>
+        <script src="/scripts/scriptsAccordion.js"></script>
     </body>
 </html>

@@ -1,22 +1,30 @@
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    color: #777;
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    background-color: rgba(0,0,0,0.6);
-    background-image: url("Images/background.jpg");
-    background-blend-mode: multiply;
-    background-size: cover;
+    background-color: #222;
 }
+
+
+
+
+/* 
+    Header and Nav Styling
+*/
+
+
+
 
 .header {
     display: flex;
     align-items: center;
     height: 100px;
+    padding-bottom: 0;
+    border: 1px solid black;
 }
 
 
@@ -66,11 +74,277 @@ html, body {
 }
 
 #current-page {
-    background-color: rgba(255,255,255,0.3);
+    background-color: #007e7e;
     box-shadow: 5px 4px 4px rgba(0,0,0,0.3);
 }
+
+
+
+
+/* 
+    Footer Styling
+*/
+
+
+
+.main-footer {
+    background-image: url("Images/EZM\ Footer\ BG.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+}
+
+.footer-item {
+    color: #FFF;
+    flex: 1;
+    text-align: center;
+    padding: 1em;
+}
+
+.footer-label {
+    font-size: 2em;
+}
+
+.footer-text {
+    font-size: 1.4em;
+    padding: 0 5em;
+    padding-bottom: 0.7em;
+}
+
+.footer-button {
+    font-size: 1.7em;
+    color: #FFF;
+    text-decoration: none;
+    background-color: #007e7e;
+    width: 30%;
+    padding: 0.7em 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: background-color 350ms;
+    transition: box-shadow 350ms;
+}
+
+.footer-button:hover {
+    background-color: #00b4b4;
+    box-shadow: 0.75rem 5px 0.75rem rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* 
+    Content Styling
+*/
+
+
+
 
 .content-header-image {
     width: 100%;
     height: auto;
+}
+
+.content-section {
+    margin: 0 auto;
+}
+
+#main-content {
+    background-image: url("Images/Main\ Content\ BG.png");
+    background-repeat: repeat-y;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    padding-bottom: 0.1em;
+}
+
+
+
+/* 
+    Home Page Styling
+*/
+
+
+
+
+#content-ezm-info {
+    padding-top: 3%;
+    max-width: 20%;
+    position: relative;
+    left: 45%;
+}
+
+#ezm-info-img {
+    position: relative;
+    padding-bottom: 2.5em;
+    left: 90%;
+}
+
+#ezm-info-text-box {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 10;
+    background-color: #EEE;
+    border-radius: 2%;
+}
+
+#ezm-info-label {
+    text-align: center;
+    padding: 1em 1em 0 1em;
+}
+
+#ezm-info-text {
+    position: relative;
+    color: #000;
+    font-size: 1.4em;
+    padding: 0 1em 1em 1em;
+}
+
+
+
+/* 
+    Modules Page Styling
+*/
+
+
+#ezm-modules-content {
+    background-color:rgba(27, 27, 27, 0.5);
+    padding-bottom: 2em;
+}
+
+#ezm-modules-label {
+    color: #FFF;
+    font-size: 2em;
+    text-align: center;
+    padding: 0.4em 0;
+    margin: 0;
+}
+
+/*
+    Accordion Styling
+*/
+
+#ezm-modules-accordion {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.ezm-accordion-item {
+    color: #FFF;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.ezm-accordion-link {
+    font-size: 1.6rem;
+    color: #FFF;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #283042;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+.ezm-accordion-link ion-icon{
+    color: #e7d5ff;
+    transition: transform 350ms;
+}
+
+.ezm-accordion-answer {
+    overflow: hidden;
+    max-height: 0;
+    position: relative;
+    background-color: #212838;
+    transition: max-height 650ms ease-out;
+}
+
+.ezm-accordion-answer::before {
+    content: "";
+    position: absolute;
+    width: 0.6rem;
+    height: 90%;
+    background-color: #007e7e;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.ezm-accordion-answer p {
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+
+.ezm-accordion-subtitle {
+    font-weight: bolder;
+}
+
+
+/*
+    Factions Styling
+*/
+
+
+.ezm-factions {
+    color: #FFF;
+    width: 100%;
+}
+
+.ezm-faction-item {
+    background-color: rgba(27, 27, 27, 0.5);
+    padding-top: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.ezm-faction-resize {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    border: 1px solid black;
+    background-color: #283042;
+    margin: 1em;
+    box-shadow: 0.75rem 5px 0.75rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.4em;
+}
+
+.ezm-faction-info {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ezm-faction-description {
+    flex: 1;
+    padding-right: 20%;
+    max-width: 50%;
+    text-align: left;
+}
+
+.ezm-faction-img {
+    flex: 1;
+    padding-left: 20%;
+    max-width: 50%;
+}
+
+.ezm-faction-cta {
+    text-decoration: none;
+    color: #007e7e;
+    font-weight: bolder;
+}
+
+.ezm-faction-cta:hover {
+    color: #ffffff;
+    text-shadow: 3px 3px 3px black;
 }
