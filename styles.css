@@ -24,7 +24,7 @@ html, body {
     align-items: center;
     height: 100px;
     padding-bottom: 0;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 
@@ -88,10 +88,9 @@ html, body {
 
 
 .main-footer {
-    background-image: url("Images/EZM\ Footer\ BG.png");
-    background-repeat: repeat-y;
-    background-size: cover;
+    background-color: rgba(80, 80, 80, 0.5);
     box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 2em;
@@ -157,7 +156,7 @@ html, body {
     background-image: url("Images/Main\ Content\ BG.png");
     background-repeat: repeat-y;
     box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
-    padding-bottom: 0.1em;
+    padding-bottom: 1em;
 }
 
 
@@ -171,36 +170,29 @@ html, body {
 
 #content-ezm-info {
     padding-top: 3%;
-    max-width: 20%;
+    max-width: 30%;
     position: relative;
-    left: 45%;
-}
-
-#ezm-info-img {
-    position: relative;
-    padding-bottom: 2.5em;
-    left: 90%;
+    left: 60%;
+    padding-bottom: 4em;
 }
 
 #ezm-info-text-box {
-    position: absolute;
-    top: 20%;
-    left: 0;
-    z-index: 10;
-    background-color: #EEE;
-    border-radius: 2%;
+    padding-top: 12em;
+    border-radius: 0.6em;
 }
 
 #ezm-info-label {
-    text-align: center;
-    padding: 1em 1em 0 1em;
+    text-align: left;
+    padding: 0;
+    font-size: 2em;
+    color: #FFF;
 }
 
 #ezm-info-text {
     position: relative;
-    color: #000;
-    font-size: 1.4em;
-    padding: 0 1em 1em 1em;
+    color: #FFF;
+    font-size: 1.6em;
+    padding: 0;
 }
 
 
@@ -289,6 +281,18 @@ html, body {
     font-weight: bolder;
 }
 
+.ezm-accordion-subtext a {
+    color:rgba(156, 156, 156, 0.8);
+}
+
+.ezm-accordion-subtext a:hover {
+    color:rgba(255, 255, 255, 0.8);
+}
+
+.ezm-accordion-subtext a:focus {
+    color:rgba(255, 255, 255, 0.8);
+}
+
 
 /*
     Factions Styling
@@ -347,4 +351,55 @@ html, body {
 .ezm-faction-cta:hover {
     color: #ffffff;
     text-shadow: 3px 3px 3px black;
+}
+
+
+/*
+    About Page Styling
+*/
+
+
+.about-content-frame {
+    color: white;
+    padding: 2em 4em;
+}
+
+.about-content {
+    padding: 1em 2em;
+    margin-top: 2em;
+    background-color: rgba(27, 27, 27, 0.5);
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 0.75rem 5px 1rem rgba(0, 0, 0, 0.1);
+}
+
+.about-content h2 {
+    padding: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.about-content-keybinds-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.about-content p {
+    flex: 1;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.about-content-bold {
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.about-content-keybind-subtext {
+    margin-left: 1em;
+}
+
+.about-content-keybind-keys {
+    font-weight: bolder;
 }
