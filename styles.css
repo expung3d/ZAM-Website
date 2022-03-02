@@ -250,7 +250,7 @@ html, body {
 }
 
 .ezm-accordion-link ion-icon{
-    color: #e7d5ff;
+    color: #fff;
     transition: transform 350ms;
 }
 
@@ -401,4 +401,79 @@ html, body {
 
 .about-content-keybind-keys {
     font-weight: bolder;
+}
+
+.about-content-additional-features-subtext {
+    text-align: center;
+}
+
+
+/*
+    Factions Styling
+*/
+
+
+
+.faction-content-frame {
+    color: white;
+    padding: 2em 4em;
+}
+
+.faction-content {
+    padding: 1em 2em;
+    margin-top: 1em;
+    background-color: rgba(27, 27, 27, 0.5);
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 1em;
+    box-shadow: 0.75rem 7px 1rem rgba(0, 0, 0, 0.1);
+}
+
+.faction-short-info {
+    margin-top: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.faction-short-info div {
+    flex: 1;
+}
+
+.faction-name {
+    font-size: 1.5rem;
+}
+
+.faction-long-info {
+    padding-top: 0.5rem;
+}
+
+.faction-long-info-short {
+    text-align: center;
+}
+
+.faction-long-info-long {
+    padding-top: 0.1rem;
+}
+
+.faction-long-info-long h2 {
+    text-align: center;
+}
+
+.faction-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.faction-gallery img {
+    padding: 0.75rem;
+    margin: 1rem;
+    box-shadow: 0.75rem 7px 1rem rgba(0, 0, 0, 0.1);
+    background-color: rgba(46, 46, 46, 0.5);
+    transition: transform 350ms;
+}
+
+.faction-gallery img:hover {
+    transform: scale(1.1);
 }
