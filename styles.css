@@ -441,10 +441,7 @@ html, body {
 
 .about-content-source input {
     flex: 1;
-    margin: 0 15%;
-    color: #FFF;
-    background-color: #007e7e;
-    text-decoration: none;
+    margin: 0 5%;
 }
 
 
