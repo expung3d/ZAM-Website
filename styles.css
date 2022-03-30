@@ -93,7 +93,7 @@ html, body {
     border-top: 2px solid black;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 
 .footer-item {
@@ -131,6 +131,15 @@ html, body {
 .footer-button:hover {
     background-color: #00b4b4;
     box-shadow: 0.75rem 5px 0.75rem rgba(0, 0, 0, 0.3);
+}
+
+.footer-disclaimer {
+    text-align: center;
+    color: rgba(99, 99, 99, 0.7);
+    background-color: rgba(28,28,28,255);
+    font-size: 1.05em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 
