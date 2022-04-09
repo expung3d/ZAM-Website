@@ -161,6 +161,7 @@ html, body {
 .content-section {
     margin: 0;
     padding: 0;
+    color: #FFF;
 }
 
 #main-content {
@@ -330,6 +331,47 @@ html, body {
 .ezm-accordion-subtext a:focus {
     color:rgba(255, 255, 255, 0.8);
 }
+
+.ezm-accordion-table {
+    margin: 10px auto;
+    min-width: 90%;
+    max-width: 90%;
+}
+
+.ezm-accordion-table th {
+    background-color: rgba(123, 123, 123, 0.1);
+}
+
+.ezm-accordion-table, .ezm-accordion-table th, .ezm-accordion-table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.ezm-accordion-table th, .ezm-accordion-table td {
+    padding: 7px;
+}
+
+.ezm-accordion-table td a {
+    color:rgba(156, 156, 156, 0.8);
+}
+
+.ezm-accordion-table td a:hover {
+    color:rgba(255, 255, 255, 0.8);
+}
+
+.ezm-accordion-table td a:focus {
+    color:rgba(255, 255, 255, 0.8);
+}
+
+.ezm-accordion-table-label {
+    font-weight: bold;
+}
+
+.ezm-accordion-table-shortcut {
+    font-weight: bold;
+    text-align: center;
+}
+
 
 
 /*
