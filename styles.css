@@ -430,6 +430,25 @@ html, body {
     text-shadow: 3px 3px 3px black;
 }
 
+.faction-breadcrumb li {
+    display: inline;
+}
+
+.faction-breadcrumb li a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.faction-breadcrumb ul:last-child {
+    color: #007e7e;
+}
+
+.faction-breadcrumb li+li::before {
+    content: " / ";
+}
+
+
 
 /*
     About Page Styling
