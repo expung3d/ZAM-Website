@@ -9,6 +9,21 @@ html, body {
     background-color: #222;
 }
 
+@media only screen and (max-width: 866px) {
+    .ezm-faction-img {
+        display: none;
+    }
+
+    .content-ezm-info {
+        position: relative;
+        left: 0;
+    }
+
+    #ezm-info-text-box {
+        padding-top: 0;
+    }
+}
+
 
 
 
@@ -117,8 +132,11 @@ html, body {
     font-size: 1.7em;
     color: #FFF;
     text-decoration: none;
+    text-align: center;
+    overflow-wrap: break-word;
     background-color: #007e7e;
-    width: 30%;
+    width: 60%;
+    max-width: 60%;
     padding: 0.7em 1em;
     border-radius: 0.5em;
     cursor: pointer;
@@ -168,6 +186,7 @@ html, body {
     background-image: url("Images/Main\ Content\ BG.png");
     background-repeat: repeat-y;
     box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    max-height: 600px;
 }
 
 
@@ -179,16 +198,16 @@ html, body {
 
 
 
-#content-ezm-info {
-    padding-top: 4%;
-    max-width: 30%;
+.content-ezm-info {
+    padding-top: 0;
+    max-width: 40%;
     position: relative;
-    left: 60%;
+    left: 50%;
     padding-bottom: 4em;
 }
 
 #ezm-info-text-box {
-    padding-top: 12em;
+    padding-top: 10em;
     border-radius: 0.6em;
 }
 
@@ -403,7 +422,6 @@ html, body {
 
 .ezm-faction-info {
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: space-around;
 }
@@ -416,7 +434,8 @@ html, body {
 
 .ezm-faction-img {
     flex: 1;
-    max-width: 50%;
+    height: auto;
+    max-width: 500px;
 }
 
 .ezm-faction-cta {
@@ -507,11 +526,46 @@ html, body {
 
 .about-content-source {
     display: flex;
+    justify-content: space-around;
 }
 
 .about-content-source input {
     flex: 1;
     margin: 0 5%;
+    max-width: 30%;
+}
+
+.about-install-videos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-content-install {
+    max-width: 45%;
+    min-width: 45%;
+    background-color: rgba(27, 27, 27, 0.5);
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 1em;
+    box-shadow: 0.75rem 7px 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    flex: 1;
+}
+
+.about-content-install iframe {
+    max-width: 80%;
+    width: 80%;
+}
+
+.about-content-install h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-content-install p {
+    text-align: center;
+    margin: 15px auto 15px auto;
+    max-width: 90%;
 }
 
 
