@@ -40,7 +40,17 @@ function About() {
             </>} />
 
             <TextBubble label="About Expung3d" text={<>
-                &emsp;&emsp;PLEASE DONATE TO ME!!!!
+                &emsp;&emsp;Expung3d has been an Arma player for a long time originally starting with Arma Life. 
+                During his time in that community he had many opportunities to be part of server development teams and become vaguely familiar with SQF. 
+                After far too many times being RDMed, VDMed, and the community for A3L dwindling, he moved on to other areas of Arma. Mostly KOTH and Public Zeus.<br /><br />
+                &emsp;&emsp;After some time of playing Public Zeus and finding some friend groups and joining various communities he had his first encounter with a <em>scripter</em>. 
+                Immediately after meeting the scripter he was kidnapped onto a flying piano and sent to the moon as a rocket flew into space and nuked the world. 
+                From this point on Expung3d focused on learning how to create scripts and spent the next 3-4 months learning SQF and making different menus and systems. 
+                After this he created ZAM and began developing that in his free time. <br/><br/>
+                &emsp;&emsp;In real life, Expung3d is a Private Pilot, Advanced Ground Instructor, and Software Developer who is currently enrolled in college <em>and</em> attending flight school. 
+                Both of these are very expensive endevours and any sort of donations are greatly appreciated. 
+                Expung3d also will write paid scripts for use in Public Zeus for you, pricing can be negotiated. 
+                Additionally, he can teach you SQF for $40 per lesson. <em><b>CashApp: $smfstzach</b></em>
             </>} />
         </div>
     );
