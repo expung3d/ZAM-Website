@@ -1,0 +1,36 @@
+.notFound {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFound h2 {
+    font-size: 40px;
+}
+
+.notFound p {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.goHome {
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 15px 30px;
+    background-color: #018786;
+    border-radius: 10px;
+}
+
+.goHome:hover {
+    background-color: #00a8a8;
+}

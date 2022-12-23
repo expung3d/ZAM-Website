@@ -1,0 +1,628 @@
+[
+    {
+        "catId": 0,
+        "catName": "Enhanced Zeus Modules Features",
+        "catHeaders": [
+            "Feature Name",
+            "Feature Description",
+            "Shortcut"
+        ],
+        "catModules": [
+            [
+                "Context Menu",
+                "Quickly access common actions and modify objects.",
+                "RMB"
+            ],
+            [
+                "Change Your Side",
+                "Change the side of your character.",
+                "CTRL + U"
+            ],
+            [
+                "Remote Control",
+                "Quickly remote control a unit.",
+                "ALT + LMB"
+            ],
+            [
+                "Attributes Menus",
+                "Revamped attributes menu for objects. Allows for greater control over object, vehicle, and AI states.",
+                "2x LMB"
+            ],
+            [
+                "AI Changes",
+                "AI don't run out of magazines, set to a stance automatically, and have correct identities for the region.",
+                "N/A"
+            ],
+            [
+                "Pylon and Vehicle Appearance Editor",
+                "Allows for changing a vehicle's pylons and vehicle appearance with an interface similar to the Virtual Garage's.",
+                "N/A"
+            ],
+            [
+                "3den Editor Features",
+                "Allows for collapsing and expanding all trees in the placement tree, allows for vehicles to be placed without AI.",
+                "N/A"
+            ],
+            [
+                "Auto Cleanup",
+                "Dead bodies and vehicles will be automatically deleted when players are far away from them.",
+                "N/A"
+            ],
+            [
+                "Dynamic Groups Fix",
+                "A fix for the Dynamic Groups system not initializing on players to ensure every player can press the U menu.",
+                "N/A"
+            ]
+        ]
+    },
+    {
+        "catId": 1,
+        "catName": "AI Modifiers",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Easy Mode",
+                "Easy Mode is a toggle. It sets the AI skill to the lowest possible and forces them to stand."
+            ],
+            [
+                "Garrison Modules",
+                "Garrisoning the AI will make them enter the nearest buildings and get in positions to defend it. Instant will teleport them to said positions, search will make the AI walk to their positions."
+            ],
+            [
+                "Edit AI Equipment",
+                "This module can remove or add NVGs, flashlights, and smoke grenades from all AI of a side."
+            ],
+            [
+                "Enable/Disable Lasers",
+                "These modules force all currently alive AI to turn on or off their lights or lasers on their gun."
+            ],
+            [
+                "Make Hostage",
+                "This module transforms the AI its placed on into a hostage. They can be freed by players using a scroll action."
+            ],
+            [
+                "Make HVT",
+                "This module transforms the AI its place on into an HVT. When they are killed all players will be alerted of their death."
+            ],
+            [
+                "Set Ambient Animation",
+                "This module changes the current animation of the AI its placed on."
+            ],
+            [
+                "Set Difficulty",
+                "This module changes the skill level of all currently alive AI."
+            ],
+            [
+                "Set Stance",
+                "This module changes the stance of all currently alive AI and changes the default stance for future AI you place."
+            ],
+            [
+                "Suppressive Fire",
+                "This module makes the AI its placed on suppress a position for a selected duration of time."
+            ],
+            [
+                "Toggle Unit Carelessness",
+                "This module makes the AI careless or aware. When careless AI will not react to gunfire and will not flee the area."
+            ],
+            [
+                "Toggle Unit Surrender",
+                "This module makes the AI its placed on surrender, throwing their gun away and placing their hands on their head. Players can secure the surrendered AI."
+            ]
+        ]
+    },
+    {
+        "catId": 2,
+        "catName": "AI Supports",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Airdrop",
+                "Calls an airdrop to the selected position. You can select whether the airdrop is an arsenal or vehicle airdrop, the payload, direction of airdrop, aircraft type, and the side of the airdrop."
+            ],
+            [
+                "Evac Helicopter",
+                "This module calls an evac helicopter to the position, select the direction the aircraft comes from, the side, the helicopter type, and the number of passengers (excluding crew) needed to leave. Then, select the destination point for the helicopter."
+            ],
+            [
+                "Call Reinforcements",
+                "This module calls reinforcements of a specific faction to a position in a helicopter, they will land there and move to a secondary position on foot. You can select the direction they come from, number of units, and number of AT soldiers."
+            ]
+        ]
+    },
+    {
+        "catId": 3,
+        "catName": "Arsenal Creator",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Create Full Arsenal",
+                "This module makes the object its placed onto an arsenal or spawns one at the position. The arsenal allows players to set respawn loadouts, rearm from their saved loadout, and edit their loadouts."
+            ],
+            [
+                "M9-SD's AIO Arsenal",
+                "This module spawns <a href='https://steamcommunity.com/sharedfiles/filedetails/?id=2765292972' target='_blank' rel='noreferrer'>M9-SD's AIO Arsenal</a>. <br /><em>Note: See the link for more documentation.</em>"
+            ]
+        ]
+    },
+    {
+        "catId": 4,
+        "catName": "Automated Missions",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Automatic Helicopter Crashes",
+                "These modules spawn a helicopter crash at a randomized position around the map. These last for 15 minutes before despawning. After completion or despawn, another will spawn in 10 minutes."
+            ],
+            [
+                "Automatic Convoy Missions",
+                "These modules spawn a convoy mission (ONLY CONFIGURED FOR ALTIS). The objective is to eliminate the convoy crew and secure the truck before they reach their destination. Destroying the truck or allowing them to reach their destination is a failure. After completion or failure another will spawn after 10 minutes. <br/><em>Note: If you would like to configure convoys for more maps, contact Expung3d on Discord.</em>"
+            ],
+            [
+                "Automatic Garrison Town",
+                "This module will garrison a percentage of the town named or at the placed position with the side selected. <br/><em>Note: High percentage of garrison on large towns can cause poor performance, use at your own risk.</em>"
+            ]
+        ]
+    },
+    {
+        "catId": 5,
+        "catName": "Clean-Up Tools",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Delete Clutter",
+                "This module deletes all dead bodies, destroyed buildings, empty groups, items on the ground, and jet canopies."
+            ],
+            [
+                "Delete Empty Groups",
+                "This module deletes all empty groups."
+            ],
+            [
+                "Delete Everything",
+                "This module deletes every object, excluding Zeus logic and objectives."
+            ],
+            [
+                "Delete Markers",
+                "This module deletes all map markers, including secure area objective markers."
+            ],
+            [
+                "Delete Mines",
+                "This module deletes all mines."
+            ],
+            [
+                "Delete Protection Zones",
+                "This module deletes all protection zones."
+            ],
+            [
+                "Delete Radius",
+                "This module deletes objects in the radius, excluding Zeus logic and objectives."
+            ]
+        ]
+    },
+    {
+        "catId": 6,
+        "catName": "Compositions",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Save Composition",
+                "This module saves the built composition around a building and allows to be used later."
+            ],
+            [
+                "Spawn Composition",
+                "This module spawns a random saved composition onto the building it is placed onto."
+            ],
+            [
+                "Show Unit Positions",
+                "This module does not work unless in 3den, it is only here for the function to be stored and used in the 3den editor."
+            ]
+        ]
+    },
+    {
+        "catId": 7,
+        "catName": "Create/Delete Ships",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Create Carrier",
+                "This module when placed on a boat will create a Aircraft Carrier."
+            ],
+            [
+                "Create Destroyer",
+                "This module when placed on a boat will create a Destroyer."
+            ],
+            [
+                "Delete All Carriers",
+                "This module will delete all Aircraft Carriers."
+            ],
+            [
+                "Delete All Destroyers",
+                "This module will delete all Destroyers."
+            ]
+        ]
+    },
+    {
+        "catId": 8,
+        "catName": "Developer Tools",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Animation Viewer",
+                "This module when placed opens the Splendid Animation Viewer and opens to the animation of the unit its placed on."
+            ],
+            [
+                "Open Debug Console (Local)",
+                "This module when opens a local debug console."
+            ],
+            [
+                "Find in Config Viewer",
+                "This module when placed on an object opens the Config Viewer to that object's config."
+            ],
+            [
+                "Function Viewer",
+                "This module when placed opens the Function Viewer."
+            ],
+            [
+                "GUI Editor",
+                "This module when placed opens the GUI Editor."
+            ]
+        ]
+    },
+    {
+        "catId": 9,
+        "catName": "Environment",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Change Time",
+                "This module changes the time without the useless ''x hours later...'' screen."
+            ],
+            [
+                "Edit Weather Conditions",
+                "This module opens a menu that lets you change the weather conditions very specifically."
+            ]
+        ]
+    },
+    {
+        "catId": 10,
+        "catName": "Explosives",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Create Minefield",
+                "This module creates a minefield with a number of mines in a radius."
+            ],
+            [
+                "Create IED",
+                "This module creates an IED that detonates when a specific side enters the radius."
+            ]
+        ]
+    },
+    {
+        "catId": 11,
+        "catName": "Gameplay",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Create Countdown",
+                "This module creates an on-screen countdown for a specified side."
+            ]
+        ]
+    },
+    {
+        "catId": 12,
+        "catName": "Markers",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Create Countdown",
+                "This module creates an on-screen countdown for a specified side."
+            ]
+        ]
+    },
+    {
+        "catId": 13,
+        "catName": "Messages",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Send Server Message",
+                "This module sends a message with large text to specified sides.<br/><em>Note: This uses a filter to prevent kicks on Official Servers, profanity will be removed.</em>"
+            ],
+            [
+                "Send Subtitle Message",
+                "This module sends a subtitle message to specified sides.<br/><em>Note: This uses a filter to prevent kicks on Official Servers, profanity will be removed.</em>"
+            ]
+        ]
+    },
+    {
+        "catId": 14,
+        "catName": "Object Modifiers",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Attach to Nearest",
+                "This module attaches the object its placed on to the nearest object to it."
+            ],
+            [
+                "Detach",
+                "This module detaches the object its placed on."
+            ],
+            [
+                "Edit Object Attributes",
+                "This module creates an interface that lets you modify the object its placed on. You can change textures, modify the init, lock it, etc."
+            ],
+            [
+                "Replace w/ Simple Object",
+                "This module replaces the object its placed on with a simple object that can be moved and rotated."
+            ],
+            [
+                "Toggle Simulation",
+                "This module disables or enables the simulation of the object its placed on."
+            ],
+            [
+                "Toggle Invincibility",
+                "This module toggles god mode for the object its placed on."
+            ],
+            [
+                "Hide/Unhide Modules",
+                "These modules hide and unhide the objects it is placed on."
+            ]
+        ]
+    },
+    {
+        "catId": 15,
+        "catName": "Player Modifiers",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Change Side",
+                "This module changes the side of the unit it is placed on."
+            ],
+            [
+                "Disarm",
+                "This module removes all weapons from the unit its placed on."
+            ],
+            [
+                "Heal / Revive",
+                "This module will heal the unit its placed on. If its a player and they are incapacitated, it will revive them."
+            ],
+            [
+                "Force Eject",
+                "This module ejects the players from the vehicle its placed on."
+            ],
+            [
+                "Mute/Un-Mute",
+                "This module mutes all players except Zeuses.<br/><em>Note: This module has a cooldown. You can only mute every 5 minutes and they will be muted for a maximum of 1 minute.</em>"
+            ]
+        ]
+    },
+    {
+        "catId": 16,
+        "catName": "Server Settings",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Change Side Relations",
+                "This module changes the side relations. Example: Makes OPFOR friendly to BLUFOR."
+            ],
+            [
+                "Disable Mortars",
+                "This module prevents all players from entering and using mortars."
+            ],
+            [
+                "Set Respawn Timer",
+                "This module changes the amount of time needed to respawn."
+            ],
+            [
+                "Set View Distance",
+                "This module changes the view distance for either just yourself (local) or everyone (global)."
+            ],
+            [
+                "Remove Team-Killers",
+                "This module removes the team-killer attribute from all players."
+            ]
+        ]
+    },
+    {
+        "catId": 17,
+        "catName": "Sounds",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "TBD",
+                "I am far too lazy to make anything for this nor would it be useful or better than the default sound modules..."
+            ]
+        ]
+    },
+    {
+        "catId": 18,
+        "catName": "Special Effects",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Fire",
+                "This module creates a fire on the module's position."
+            ],
+            [
+                "Smoke",
+                "This module creates a smoke pillar on the module's position."
+            ],
+            [
+                "Earthquake",
+                "This module creates an earthquake that effects everyone."
+            ],
+            [
+                "Toggle Lamps (Radius)",
+                "This module turns off or on all lights in a radius from the module's position."
+            ]
+        ]
+    },
+    {
+        "catId": 19,
+        "catName": "Terrain Object Modifiers",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Edit Building Doors",
+                "This module lets you lock and unlock doors on buildings."
+            ],
+            [
+                "God Mode Fences",
+                "This module makes fences within the radius god-moded so that they cannot be ran over if they are reasonably structurally sound."
+            ],
+            [
+                "Hide Terrain Objects (Radius)",
+                "This module hides terrain objects in a radius from the module's position."
+            ]
+        ]
+    },
+    {
+        "catId": 20,
+        "catName": "Teleportation",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Teleport Self",
+                "This module teleports your character to the module's position. Although you are probably better of using RMB to teleport."
+            ],
+            [
+                "Teleport All Players",
+                "This module teleports all players to the module's position."
+            ],
+            [
+                "Teleport One Player",
+                "This module teleports a specific player to the module's position."
+            ],
+            [
+                "Teleport Side",
+                "This module teleports all players of a specific side to the module's position."
+            ]
+        ]
+    },
+    {
+        "catId": 21,
+        "catName": "Utilities",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Add Objects to Interface",
+                "This module adds ALL objects to the Zeus interface."
+            ],
+            [
+                "Add Objects to Interface (Radius)",
+                "This module adds ALL objects within the radius to the Zeus interface."
+            ],
+            [
+                "Toggle Auto-Add to Interface",
+                "This module toggles off the Auto-Add to Interface tool. When turned on everytime the Zeus interface is opened it will add all objects to the interface."
+            ]
+        ]
+    },
+    {
+        "catId": 22,
+        "catName": "Vehicle Modifiers",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Unflip Vehicle",
+                "This module unflips the vehicle its placed on."
+            ],
+            [
+                "Rearm",
+                "This module rearms the vehicle its placed on."
+            ],
+            [
+                "Refuel",
+                "This module refuels the vehicle its placed on."
+            ],
+            [
+                "Repair",
+                "This module repairs the vehicle its placed on."
+            ]
+        ]
+    },
+    {
+        "catId": 23,
+        "catName": "Zeus Settings",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Disable Game Moderator",
+                "This module forces the Game Moderator into the Spectator screen so they cannot edit anything through Zeus."
+            ],
+            [
+                "Enable Game Moderator",
+                "This module allows the Game Moderator to have access to all items in Zeus and have full permissions."
+            ]
+        ]
+    }
+]

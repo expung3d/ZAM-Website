@@ -1,0 +1,65 @@
+.textBubble {
+    color: white;
+    padding-bottom: 30px;
+}
+
+.textBubbleData {
+    color: rgb(221, 221, 221);
+    background: #272727;
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.textBubbleData h3 {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.textBubbleData p {
+    text-align: left;
+    font-size: 18px;
+    white-space: pre-wrap;
+}
+
+.textBubbleVideo {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.textBubbleVideo iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.textLink {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.textBold {
+    font-weight: bolder;
+}
+
+.textItalic {
+    font-style: italic;
+}
+
+@media (max-width: 800px) {
+    .textBubbleData h3 {
+        font-size: 22px;
+    }
+
+    .textBubbleData p {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Malden Defense Force",
+        "nameShort": "MDF",
+        "icon": "../images/mdf/mdf_icon",
+        "link": "mdf",
+        "descriptionShort": "Some short description of the MDF",
+        "descriptionLong": "oh my god its the mdf how flippin epic!?!?!",
+        "gallery": [
+            "./images/mdf/mdf checkpoint"
+        ]
+    }
+]

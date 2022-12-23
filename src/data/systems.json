@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "Enhanced Zeus Modules",
+        "description": "Modification of the vanilla Zeus addon that adds new modules, features, bug fixes, and improves Zeus quality of life. Additionally, adds new factions created by ZAM and allows for Zeuses to use development tools.",
+        "imagePath": "./images/ezm-icon",
+        "link": "enhancedZeusModules"
+    },
+    {
+        "id": 2,
+        "title": "Roles System",
+        "description": "Designed to incentivize teamplay and coordination between those in groups together. Players are forced to join squads and play certain roles to access equipment making players have to rely on teammates rather than just themselves.",
+        "imagePath": "./images/rs5",
+        "link": "rolesSystem"
+    }
+]

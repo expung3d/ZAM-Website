@@ -1,0 +1,141 @@
+.header {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin: 0 auto 15px auto;
+}
+
+.navBarContainer {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1280px;
+    height: 80px;
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBarBrand {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.navBarLogo {
+    width: 65px;
+    height: 65px;
+}
+
+.navBarName {
+    color: white;
+    margin-left: 15px;
+    font-size: 35px;
+}
+
+.navLinks {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navLinks ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+.navBarButton {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: rgb(34, 34, 34);
+    padding: 29px 30px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.navBarButton.selectedNav {
+    background-color: #303030;
+}
+
+.navBarButton:hover {
+    background-color: #303030;
+}
+
+.navHamburger {
+    position: absolute;
+}
+
+.hamburgerButton {
+    all: unset;
+    cursor: pointer;
+    position: absolute;
+    top: 1.7rem;
+    right: 1.7rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background-color: none;
+}
+
+.hamBar {
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .hamburgerButton {
+        display: flex;
+    }
+
+    .navHamburger {
+        position: static;
+    }
+
+    .navBarBrand {
+        padding: 10px 0 0 10px;
+    }
+
+    .navBarContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navLinks {
+        padding-top: 5px;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .navLinks ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navLinks li {
+        text-align: center;
+    }
+
+    .navBarButton {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .navLinks.activeHam {
+        display: flex;
+    }
+}

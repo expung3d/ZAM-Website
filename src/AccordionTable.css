@@ -1,0 +1,129 @@
+* {
+    color: white;
+}
+
+.accordionTableContainer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.accordionLink {
+    max-height: 75px;
+}
+
+.accordionLinkText {
+    all: unset;
+    cursor: pointer;
+    width: 100%;
+    color: #FFF;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordionLinkText h3 {
+    text-align: left;
+    padding: 15px;
+    font-size: 1.3rem;
+}
+
+.accordionChevron {
+    position: relative;
+    width: 30px;
+    left: -30px;
+    filter: invert(92%) sepia(94%) saturate(6%) hue-rotate(216deg) brightness(105%) contrast(100%);
+    transition: transform 0.5s ease;
+}
+
+.accordionChevron.activeTable {
+    transform: rotate(180deg);
+}
+
+.accordionAnswer {
+    display: none;
+    max-height: 0px;
+}
+
+.accordionAnswer.activeTable {
+    margin-top: 15px;
+    display: block;
+    max-height: none;
+}
+
+.accordionTable {
+    overflow: scroll;
+    margin: 10px auto;
+    min-width: 90%;
+    max-width: 90%;
+}
+
+.accordionTable th {
+    background-color: rgb(26, 26, 26);
+}
+
+.accordionTable td:first-child {
+    font-weight: bolder;
+}
+
+.accordionTable td:nth-child(2) {
+    text-align: left;
+}
+
+.accordionTable tr:nth-child(odd) {
+    background-color: #303030;
+}
+
+.accordionTable tr:nth-child(even) {
+    background-color: #5c5c5c;
+}
+
+.accordionTable, .accordionTable th, .accordionTable td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.accordionTable th, .accordionTable td {
+    padding: 7px;
+}
+
+.accordionTable td a {
+    color: #ffffff;
+}
+
+.accordionTable td a:hover {
+    color:#97ffff;
+}
+
+.accordionTable td a:focus {
+    color:rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 800px) {
+    .accordionTableContainer {
+        overflow: scroll;
+    }
+
+    .accordionLinkText h3 {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .accordionChevron {
+        width: 20px;
+        left: -20px;
+    }
+
+    .accordionTable th {
+        font-size: 12px;
+    }
+
+    .accordionTable td {
+        font-size: 12px;
+    }
+}
