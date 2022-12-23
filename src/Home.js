@@ -1,5 +1,6 @@
 import './Home.css';
 import NavBar from "./NavBar";
+import WarningBanner from './WarningBanner';
 import SystemDisplay from "./systemDisplay";
 import systemData from "./data/systems.json";
 
@@ -27,6 +28,7 @@ function Home() {
         <div className="homePage">
             <div className="navBar">
                 <NavBar navElements={navElements}/>
+                <WarningBanner />
             </div>
             <div className="Systems">
                 {systemData.map((system) => (

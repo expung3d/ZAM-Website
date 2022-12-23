@@ -1,0 +1,15 @@
+.warningBannerContainer {
+    position: relative;
+    top: -15px;
+    text-align: center;
+    background: rgb(34, 34, 34);
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.warningBannerContainer p {
+    font-size: 18px;
+    color: rgb(255, 78, 78);
+    font-weight: bolder;
+    overflow: wrap;
+}
