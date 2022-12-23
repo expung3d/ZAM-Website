@@ -27,6 +27,7 @@ function App() {
           </Route>
           <Route path="devWarning" element={<DevWarning />} />
           <Route path="workingOnIt" element={<WorkingOnIt />} />
+          <Route path="notFound" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
