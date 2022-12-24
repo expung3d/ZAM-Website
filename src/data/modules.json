@@ -328,6 +328,32 @@
         ]
     },
     {
+        "catId": 100,
+        "catName": "Festive Modules (Christmas)",
+        "catHeaders": [
+            "Module Name",
+            "Module Description"
+        ],
+        "catModules": [
+            [
+                "Create a Christmas Tree",
+                "Creates a Christmas Tree where the module is placed."
+            ],
+            [
+                "Create a Candy Cane (Red/Green)",
+                "Creates a Candy Cane of the selected color."
+            ],
+            [
+                "Create a Big, Sitting Santa",
+                "Creates a big, sitting Santa! You can even sit on his lap and ask for a jet!"
+            ],
+            [
+                "Create a Santa Hostage",
+                "Creates a Santa who is a hostage and can be freed by scrolling on him"
+            ]
+        ]
+    },
+    {
         "catId": 11,
         "catName": "Gameplay",
         "catHeaders": [
@@ -364,12 +390,20 @@
         ],
         "catModules": [
             [
+                "3D Speak",
+                "This module shows a message above the unit it is placed on to anyone who can see the unit and in the chat globally."
+            ],
+            [
                 "Send Server Message",
                 "This module sends a message with large text to specified sides.<br/><em>Note: This uses a filter to prevent kicks on Official Servers, profanity will be removed.</em>"
             ],
             [
                 "Send Subtitle Message",
                 "This module sends a subtitle message to specified sides.<br/><em>Note: This uses a filter to prevent kicks on Official Servers, profanity will be removed.</em>"
+            ],
+            [
+                "Voice Dialog Message",
+                "This module lets you choose any dialog in the game and play them."
             ]
         ]
     },
@@ -432,6 +466,10 @@
                 "This module will heal the unit its placed on. If its a player and they are incapacitated, it will revive them."
             ],
             [
+                "Heal / Revive All",
+                "This module will heal and revive all players in the server."
+            ],
+            [
                 "Force Eject",
                 "This module ejects the players from the vehicle its placed on."
             ],
@@ -480,8 +518,8 @@
         ],
         "catModules": [
             [
-                "TBD",
-                "I am far too lazy to make anything for this nor would it be useful or better than the default sound modules..."
+                "Sound Board",
+                "This module lets you play any sound from the game files. You can preview sounds prior to playing them globally."
             ]
         ]
     },
