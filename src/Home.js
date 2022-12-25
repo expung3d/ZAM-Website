@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import WarningBanner from './WarningBanner';
 import SystemDisplay from "./systemDisplay";
 import systemData from "./data/systems.json";
+import Footer from './Footer';
 
 function Home() {
 
@@ -34,6 +35,9 @@ function Home() {
                 {systemData.map((system) => (
                     <SystemDisplay title={system.title} description={system.description} imagePath={system.imagePath} link={system.link}/>
                 ))}
+            </div>
+            <div className="footer">
+                <Footer />
             </div>
         </div>
     );

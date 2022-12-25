@@ -1,0 +1,20 @@
+.footerContainer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid black;
+    padding: 15px;
+    background: rgb(34, 34, 34);
+}
+
+.footerContainer p {
+    font-size: 13px;
+    text-align: center;
+    color: #AAA;
+}
+
+@media (max-width: 800px) {
+    .footerContainer p {
+        font-size: 10px;
+    }
+}

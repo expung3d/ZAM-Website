@@ -3,12 +3,72 @@
         "id": 1,
         "name": "Malden Defense Force",
         "nameShort": "MDF",
-        "icon": "../images/mdf/mdf_icon",
+        "icon": "../images/mdf/mdf_icon_b",
         "link": "mdf",
         "descriptionShort": "Some short description of the MDF",
         "descriptionLong": "oh my god its the mdf how flippin epic!?!?!",
         "gallery": [
             "./images/mdf/mdf checkpoint"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Freedom and Independence Army+",
+        "nameShort": "FIA+",
+        "icon": "../images/fiap/fiap_icon",
+        "link": "fiap",
+        "descriptionShort": "Some short description of the FIA+",
+        "descriptionLong": "oh my god its the FIA+ how flippin epic!?!?!",
+        "gallery": [
+            
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Better Civilians",
+        "nameShort": "BC",
+        "icon": "../images/better_civs/bc_icon",
+        "link": "betterCivs",
+        "descriptionShort": "Some short description of the Better Civilians",
+        "descriptionLong": "oh my god its the BC how flippin epic!?!?!",
+        "gallery": [
+            
+        ]
+    },
+    {
+        "id": 4,
+        "name": "CSAT (Africans)",
+        "nameShort": "CSATA",
+        "icon": "../images/csat/afr_icon_b",
+        "link": "mdf",
+        "descriptionShort": "Some short description of the African CSAT",
+        "descriptionLong": "oh my god its the mdf how flippin epic!?!?!",
+        "gallery": [
+            
+        ]
+    },
+    {
+        "id": 5,
+        "name": "CSAT (Chinese)",
+        "nameShort": "CSATC",
+        "icon": "../images/csat/cn_icon_b",
+        "link": "mdf",
+        "descriptionShort": "Some short description of the Chinese CSAT",
+        "descriptionLong": "oh my god its the mdf how flippin epic!?!?!",
+        "gallery": [
+            
+        ]
+    },
+    {
+        "id": 6,
+        "name": "CTRG+",
+        "nameShort": "CTRG+",
+        "icon": "../images/ctrg/ctrg_icon_b",
+        "link": "ctrg",
+        "descriptionShort": "Some short description of the CTRG",
+        "descriptionLong": "oh my god its the ctrg how flippin epic!?!?!",
+        "gallery": [
+            
         ]
     }
 ]

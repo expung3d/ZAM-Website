@@ -1,9 +1,16 @@
 .header {
     margin: 0 auto;
     padding: 0;
+    position: fixed;
+    top: 0;
+    z-index: 2;
     width: 100%;
     border-bottom: 1px solid black;
     margin: 0 auto 15px auto;
+}
+
+.header.hidden {
+    display: none;
 }
 
 .navBarContainer {

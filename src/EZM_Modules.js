@@ -1,5 +1,6 @@
 import "./EZM_Modules.css";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 import AccordionTable from "./AccordionTable";
 import moduleData from "./data/modules.json";
 
@@ -40,7 +41,7 @@ function EZM_Modules() {
     return (<>
         <div>
             <div className="navBar">
-                <NavBar navElements={navElements}/>
+                <NavBar title="E.Z.M." navElements={navElements}/>
             </div>
             <div className="tableContainer">
                 <h3>Enhanced Zeus Modules Module Info</h3>
@@ -53,6 +54,9 @@ function EZM_Modules() {
                         )
                     })
                 }
+            </div>
+            <div className="footer">
+                <Footer />
             </div>
         </div>
         </>);

@@ -52,6 +52,11 @@
                 "Dynamic Groups Fix",
                 "A fix for the Dynamic Groups system not initializing on players to ensure every player can press the U menu.",
                 "N/A"
+            ],
+            [
+                "Zeus Bug Fixes",
+                "Bugs in Zeus such as not being able to place objects on the top of buildings or on aircraft carriers have been fixed.",
+                "N/A"
             ]
         ]
     },

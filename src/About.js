@@ -1,6 +1,7 @@
 import "./About.css";
 import TextBubble from "./TextBubble";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 function About() {
     const navElements = [
@@ -52,6 +53,9 @@ function About() {
                 Expung3d also will write paid scripts for use in Public Zeus for you, pricing can be negotiated. 
                 Additionally, he can teach you SQF for $40 per lesson. <em><b>CashApp: $smfstzach</b></em>
             </>} />
+            <div className="footer">
+                <Footer />
+            </div>
         </div>
     );
 };

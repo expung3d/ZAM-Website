@@ -1,21 +1,45 @@
 import './navBar.css';
 import logo from "./images/ZAM 3.0.png";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-function NavBar( {navElements} ) {
+function NavBar( {title = "Z.A.M.", navElements} ) {
     const [isHamburger, setHamburger] = useState(false);
+    const [show, setShow] = useState(true);
+    const [lastScrollY,setLastScrollY] = useState(0);
 
     const toggleHamburger = event => {
         setHamburger(!isHamburger);
     };
 
+    const controlNavbar = () => {
+        if(typeof window !== "undefined") {
+            if(window.scrollY > lastScrollY) {
+                setShow(false);
+            } else {
+                setShow(true);
+            }
+            setLastScrollY(window.scrollY);
+        }
+    };
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            window.addEventListener('scroll', controlNavbar);
+
+            // cleanup function
+            return () => {
+                window.removeEventListener('scroll', controlNavbar);
+            };
+        }
+    }, [lastScrollY]);
+
     return (<>
-        <div className="header">
+        <div className={`header  ${(!show && !isHamburger) && 'hidden'}`}>
             <div className="navBarContainer">
                 <div className="navBarBrand">
                     <img src={logo} alt="Logo" className="navBarLogo"/>
-                    <h1 className="navBarName">Z.A.M.</h1>
+                    <h1 className="navBarName">{title}</h1>
                 </div>
                 
                 <div className={`navLinks ${isHamburger ? 'activeHam' : ''}`}>

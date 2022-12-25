@@ -1,5 +1,6 @@
 import "./EZM_Factions.css";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 import factionData from "./data/factions.json";
 import FactionDisplay from "./factionDisplay";
 
@@ -40,12 +41,15 @@ function EZM_Factions() {
     return (
         <div>
             <div className="navBar">
-                <NavBar navElements={navElements}/>
+                <NavBar title="E.Z.M." navElements={navElements}/>
             </div>
             <div className="Factions">
-            {factionData.map((faction) => (
+                {factionData.map((faction) => (
                     <FactionDisplay faction={faction}/>
                 ))}
+            </div>
+            <div className="footer">
+                <Footer />
             </div>
         </div>
     );
