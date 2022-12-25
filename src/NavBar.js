@@ -12,18 +12,17 @@ function NavBar( {title = "Z.A.M.", navElements} ) {
         setHamburger(!isHamburger);
     };
 
-    const controlNavbar = () => {
-        if(typeof window !== "undefined") {
-            if(window.scrollY > lastScrollY) {
-                setShow(false);
-            } else {
-                setShow(true);
-            }
-            setLastScrollY(window.scrollY);
-        }
-    };
-
     useEffect(() => {
+        const controlNavbar = () => {
+            if(typeof window !== "undefined") {
+                if(window.scrollY > lastScrollY) {
+                    setShow(false);
+                } else {
+                    setShow(true);
+                }
+                setLastScrollY(window.scrollY);
+            }
+        };
         if (typeof window !== 'undefined') {
             window.addEventListener('scroll', controlNavbar);
 
@@ -32,7 +31,7 @@ function NavBar( {title = "Z.A.M.", navElements} ) {
                 window.removeEventListener('scroll', controlNavbar);
             };
         }
-    }, [lastScrollY,controlNavbar]);
+    }, [lastScrollY]);
 
     return (<>
         <div className={`header  ${(!show && !isHamburger) && 'hidden'}`}>
