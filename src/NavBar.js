@@ -32,7 +32,7 @@ function NavBar( {title = "Z.A.M.", navElements} ) {
                 window.removeEventListener('scroll', controlNavbar);
             };
         }
-    }, [lastScrollY]);
+    }, [lastScrollY,controlNavbar]);
 
     return (<>
         <div className={`header  ${(!show && !isHamburger) && 'hidden'}`}>
