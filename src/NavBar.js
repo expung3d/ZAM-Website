@@ -15,8 +15,11 @@ function NavBar( {title = "Z.A.M.", navElements} ) {
     useEffect(() => {
         const controlNavbar = () => {
             if(typeof window !== "undefined") {
-                if(window.scrollY > lastScrollY || Math.round(window.scrollY) < 10) {
-                    setShow(false);
+                if(window.scrollY > lastScrollY) {
+                    console.log("false");
+                    if(window.scrollY > 50) {
+                        setShow(false);
+                    }
                 } else {
                     setShow(true);
                 }
