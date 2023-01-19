@@ -1,4 +1,10 @@
 .ezmAbout {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px auto;
+    max-width: 50%;
+}
+
+@media (max-width: 800px) {
+    .ezmAbout {
+        max-width: 100%;
+    }
 }

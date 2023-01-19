@@ -1,0 +1,44 @@
+.imageContainer {
+    margin: 0 auto;
+    max-width: 60%;
+    transition: all 0.2s;
+}
+
+.imageContainer:hover {
+    transform: scale(1.5);
+    padding-top: 95px;
+    padding-bottom: 95px;
+    z-index: 2;
+}
+
+.imageContainer:hover .imageCaption {
+    font-weight: bolder;
+}
+
+.imageImage {
+    height: 100%;
+    width: 100%;
+    box-shadow: 5px 5px 3px #111D;
+}
+
+.imageCaption {
+    padding: 5px 0;
+    text-align: center;
+    color: #BBBB;
+}
+
+@media (max-width: 800px) {
+    .imageContainer {
+        max-width: 80%;
+    }
+
+    .imageContainer:hover {
+        transform: scale(1);
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .imageContainer:hover .imageCaption {
+        font-weight: normal;
+    }
+}
