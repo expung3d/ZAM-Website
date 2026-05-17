@@ -31,7 +31,7 @@
         "id": 3,
         "title": "Enhancement Pack",
         "description": "Enhancement Pack is a collection of systems that improve and expand upon vanilla Arma 3 gameplay. Features include: earplugs, player dragging, suppression effects, and many, many more.",
-        "imagePath": "./images/Core Thumbnail",
+        "imagePath": "./images/Core-Thumbnail",
         "links": [
             {
                 "text": "Install",
