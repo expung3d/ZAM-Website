@@ -2,15 +2,41 @@
     {
         "id": 1,
         "title": "Enhanced Zeus Modules",
-        "description": "Modification of the vanilla Zeus addon that adds new modules, features, bug fixes, and improves Zeus quality of life. Additionally, adds new factions created by ZAM and allows for Zeuses to use development tools.",
+        "description": "Modification of the vanilla Zeus addon that adds new modules, features, bug fixes, and improves Zeus quality of life. The pinnacle of Public Zeus scripting.",
         "imagePath": "./images/ezm-icon",
-        "link": "enhancedZeusModules"
+        "links": [
+            {
+                "text": "Learn More",
+                "link": "enhancedZeusModules"
+            },
+            {
+                "text": "Install",
+                "link": "https://github.com/M9-SD/EZM-Updater/releases/download/V0.1/EZM_Updater.exe"
+            }
+        ]
     },
     {
         "id": 2,
         "title": "Roles System",
         "description": "Designed to incentivize teamplay and coordination between those in groups together. Players are forced to join squads and play certain roles to access equipment making players have to rely on teammates rather than just themselves.",
         "imagePath": "./images/rs5",
-        "link": "rolesSystem"
+        "links": [
+            {
+                "text": "Learn More",
+                "link": "https://github.com/expung3d/A3-RolesSystem"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Enhancement Pack",
+        "description": "Enhancement Pack is a collection of systems that improve and expand upon vanilla Arma 3 gameplay. Features include: earplugs, player dragging, suppression effects, and many, many more.",
+        "imagePath": "./images/Core Thumbnail",
+        "links": [
+            {
+                "text": "Install",
+                "link": "https://steamcommunity.com/workshop/filedetails/?id=2965517471"
+            }
+        ]
     }
 ]

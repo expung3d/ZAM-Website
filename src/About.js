@@ -56,11 +56,7 @@ function About() {
                     &emsp;&emsp;After some time of playing Public Zeus and finding some friend groups and joining various communities he had his first encounter with a <em>scripter</em>. 
                     Immediately after meeting the scripter he was kidnapped onto a flying piano and sent to the moon as a rocket flew into space and nuked the world. 
                     From this point on Expung3d focused on learning how to create scripts and spent the next 3-4 months learning SQF and making different menus and systems. 
-                    After this he created ZAM and began developing that in his free time. <br/><br/>
-                    &emsp;&emsp;In real life, Expung3d is a Private Pilot, Advanced Ground Instructor, and Software Developer who is currently enrolled in college <em>and</em> attending flight school. 
-                    Both of these are very expensive endeavours and any sort of donations are greatly appreciated. 
-                    Expung3d also will write paid scripts for use in Public Zeus for you, pricing can be negotiated. 
-                    Additionally, he can teach you SQF for $40 per lesson. <em><b>CashApp: $smfstzach</b></em>
+                    After this he created ZAM and began developing that in his free time. <br/>
                 </>} />
             </div>
             <div className="footer">

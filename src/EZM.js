@@ -26,8 +26,13 @@ function EZM() {
             selected: true
         },
         {
-            text: "Download",
-            destination: "https://github.com/expung3d/Enhanced-Zeus-Modules/archive/refs/heads/main.zip",
+            text: "Install",
+            destination: "https://github.com/M9-SD/EZM-Updater/releases/download/V0.1/EZM_Updater.exe",
+            selected: false
+        },
+        {
+            text: "Source",
+            destination: "https://github.com/expung3d/Enhanced-Zeus-Modules/",
             selected: false
         },
         {
@@ -41,7 +46,7 @@ function EZM() {
     return (
         <div>
             <div className="navBar">
-                <NavBar title="E.Z.M." navElements={navElements}/>
+                <NavBar title="Z.A.M." navElements={navElements}/>
             </div>
             <div className="ezmAbout">
                 <TextBubble label="Enhanced Zeus Modules" text={<>
@@ -51,13 +56,17 @@ function EZM() {
                     We've felt that Zeus was lacking many features that have been needed for a long time. 
                     From 2019 until 2022 EZM was a private script that only a select few had access to. 
                     In early Feb. 2022 Expung3d re-wrote EZM from the ground up for use with Scripted Compositions in Arma 3 Official Zeus servers, creating EZM Lite. 
-                    With over 100 new modules added, new factions being added, and quality of life changes that Zeus sorely needed, EZM is surely the best in class Vanilla Zeus Enhancement script in the market.<br /><br />
+                    With over 100 new modules added, new factions being added, and quality of life changes that Zeus sorely needed, EZM is surely the best in class Vanilla Zeus Enhancement script in the market.<br />
                 </>}/>
-                <TextBubble label="Enhanced Zeus Modules Installation" text={<>
+
+                <TextBubble label="Automated Enhanced Zeus Modules Installation" text={<>
+                    Thanks to M9-SD's charitable work, EZM is now easier than ever to install. Simply download the <a href="https://github.com/M9-SD/EZM-Updater/releases/download/V0.1/EZM_Updater.exe" target="_blank" rel="noreferrer">EZM Updater application</a> and run it. The application will download the latest version of EZM from Github and save it to your compositions on Arma automatically.
+                </>}/>
+
+                <TextBubble label="Manual Enhanced Zeus Modules Installation" text={<>
                 <span className="textBold">Steps to Install:</span><br />
                     &emsp;1. Download the EZM source code from the GitHub.<br />
                     &emsp;2. Copy the code and paste it into an invisible helipad.<br />
-                    &emsp;&emsp;2a. <span className="textItalic">Add "deleteVehicle this;" to the very end to delete the helipad automatically.</span><br />
                     &emsp;3. Save the composition.<br />
                     &emsp;4. Join a server with Zeus composition scripts enabled and place the composition. <br/> <br/>
                 </>} video="lLMcshY0y-Q"/>

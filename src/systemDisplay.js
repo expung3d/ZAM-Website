@@ -1,7 +1,7 @@
 import './systemDisplay.css';
 import { Link } from 'react-router-dom';
 
-function SystemDisplay({title, imagePath, description, link}) {
+function SystemDisplay({title, imagePath, description, links}) {
     
     var backgroundStyle = {
         backgroundImage: `url('${imagePath}.png')`,
@@ -14,7 +14,19 @@ function SystemDisplay({title, imagePath, description, link}) {
                 <h3 className="systemInfoLabel">{title}</h3>
                 <p className="systemInfoDescription">{description}</p>
             </div>
-            <Link className="systemInfoCTA" to={link}>Learn More</Link>
+            {
+                links.map((link, index) => (
+                    link.link.includes("https") ? (
+                        link.text.includes("Install") ? (
+                            <a className="systemInfoCTA systemInfoBold" key={index} href={link.link} target="_blank" rel="noreferrer">{link.text}</a>
+                        ) : (
+                            <a className="systemInfoCTA" key={index} href={link.link} target="_blank" rel="noreferrer">{link.text}</a>
+                        )
+                    ) : (
+                        <Link className="systemInfoCTA" key={index} to={link.link}>{link.text}</Link>
+                    )
+                ))
+            }
         </div>
     );
 };

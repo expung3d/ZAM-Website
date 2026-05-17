@@ -41,7 +41,7 @@ function EZM_Factions() {
     return (
         <div>
             <div className="navBar">
-                <NavBar title="E.Z.M." navElements={navElements}/>
+                <NavBar title="Z.A.M." navElements={navElements}/>
             </div>
             <div className="Factions">
                 {factionData.map((faction) => (

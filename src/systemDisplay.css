@@ -65,3 +65,7 @@
     cursor:pointer;
     background-color: #00a8a8;
 }
+
+.systemInfoBold {
+    font-weight: bold;
+}

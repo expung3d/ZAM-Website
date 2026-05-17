@@ -41,7 +41,7 @@ function EZM_Modules() {
     return (<>
         <div>
             <div className="navBar">
-                <NavBar title="E.Z.M." navElements={navElements}/>
+                <NavBar title="Z.A.M." navElements={navElements}/>
             </div>
             <div className="tableContainer">
                 <h3>Enhanced Zeus Modules Module Info</h3>

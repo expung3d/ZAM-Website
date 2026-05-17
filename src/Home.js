@@ -19,6 +19,11 @@ function Home() {
             selected: false
         },
         {
+            text: "Install EZM",
+            destination: "https://github.com/M9-SD/EZM-Updater/releases/download/V0.1/EZM_Updater.exe",
+            selected: false
+        },
+        {
             text: "Discord",
             destination: "https://discord.gg/W4ew5HP",
             selected: false
@@ -33,7 +38,7 @@ function Home() {
             </div>
             <div className="Systems">
                 {systemData.map((system) => (
-                    <SystemDisplay title={system.title} description={system.description} imagePath={system.imagePath} link={system.link}/>
+                    <SystemDisplay title={system.title} description={system.description} imagePath={system.imagePath} links={system.links}/>
                 ))}
             </div>
             <div className="footer">
